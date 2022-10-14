@@ -1,0 +1,11 @@
+.background p {
+  font-size: larger;
+}
+.about-me {
+  width: 50%;
+  border: solid black;
+  border-width: 5px;
+  background-color: rgb(81, 188, 81);
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
