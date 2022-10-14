@@ -1,17 +1,31 @@
+body {
+  background-color: aquamarine;
+}
+.header {
+  text-align: center;
+}
 .background p {
   font-size: larger;
 }
 .about-me {
   width: 50%;
+  height: 200px;
   border: solid black;
   border-width: 5px;
-  background-color: rgb(81, 188, 81);
+  background-color: rgb(108, 177, 205);
+  text-align: center;
   margin-bottom: 10px;
   box-sizing: border-box;
 }
 .work-history {
   width: 350px;
   float: left;
+}
+.work-history p {
+  text-decoration: underline;
+}
+.education p {
+  text-decoration: underline;
 }
 .education {
   width: 350px;
