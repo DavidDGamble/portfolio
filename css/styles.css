@@ -9,3 +9,14 @@
   margin-bottom: 10px;
   box-sizing: border-box;
 }
+.work-history {
+  width: 350px;
+  float: left;
+}
+.education {
+  width: 350px;
+  float: left;
+}
+.interests {
+  float: left;
+}
