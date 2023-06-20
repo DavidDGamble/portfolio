@@ -25,20 +25,8 @@ const Rocket = () => {
           position: 'absolute',
           bottom: `${position}px`,
           left: '80%',
-          transform: 'translateX(-50%)',
         }}
       />
-      {/* <div
-        style={{
-          position: 'absolute',
-          bottom: `${position}px`,
-          left: '50%',
-          transform: 'translateX(-50%)',
-          width: '20px',
-          height: '40px',
-          backgroundColor: 'white',
-        }}
-      ></div> */}
     </div>
 
   );
