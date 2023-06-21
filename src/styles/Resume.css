@@ -1,0 +1,54 @@
+.resume {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.techSkill1 {
+  float: left;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+
+.techSkill {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 2rem;
+}
+
+.bold {
+  margin-bottom: 0;
+}
+
+.italic {
+  margin-top: 0;
+}
+
+hr {
+  width: 100%;
+  margin-top: 0;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  float: left;
+  width: 80%;
+  margin-left: 2rem;
+  margin-right: 3rem;
+}
+
+.right {
+  float: right;
+  width: 20%;
+}

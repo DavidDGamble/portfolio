@@ -1,3 +1,4 @@
+import React from "react";
 import Rocket from './Rocket';
 
 const Home = () => {

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Header from './Header';
 import Home from './Home';
 import Resume from './Resume';
