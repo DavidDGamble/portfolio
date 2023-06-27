@@ -45,9 +45,7 @@ const App = () => {
         resume = {resume}
         projects = {projects}
       />
-      <div className='container'>
-        {curVisibleState}
-      </div>
+      {curVisibleState}
     </div>
   );
 }

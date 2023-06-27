@@ -1,22 +1,31 @@
 import React from "react";
 import PropTypes from 'prop-types'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import "../styles/Header.css";
 
 const Header = (props) => {
   return (
     <div className="header">
-      <div className="linkContainer">
-        <p className={props.home ? "link2" : "link"} 
-          onClick={props.handleHome}>home</p>
-      </div>
-      <div className="linkContainer">
-        <p className={props.resume ? "link2" : "link"}  
-          onClick={props.handleResume}>resume</p>
-      </div>
-      <div className="linkContainer">
-        <p className={props.projects ? "link2" : "link"}  
-          onClick={props.handleProjects}>projects</p>
-      </div>
+      <Navbar bg="dark" data-bs-theme="dark">
+        <Container>
+          <Nav className="me-auto">
+            <Nav.Link className="linkContainer">
+              <p className={props.home ? "link2" : "link"} 
+                onClick={props.handleHome}>home</p>
+            </Nav.Link>
+            <Nav.Link className="linkContainer">
+              <p className={props.resume ? "link2" : "link"}  
+                onClick={props.handleResume}>resume</p>
+            </Nav.Link>
+            <Nav.Link className="linkContainer">
+              <p className={props.projects ? "link2" : "link"}  
+                onClick={props.handleProjects}>projects</p>
+            </Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
     </div>
   );
 }

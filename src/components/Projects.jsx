@@ -4,7 +4,7 @@ import '../styles/Projects.css';
 const Projects = () => {
   return (
     <div className="projects">
-      <h1>Projects</h1>
+      <h1 style={{ textAlign: 'center' }}>Projects</h1>
     </div>
   );
 }
