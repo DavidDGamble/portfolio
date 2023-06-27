@@ -11,7 +11,7 @@ const Resume = () => {
       <p className='techSkill'><strong>Frameworks/Libraries: </strong>React, Redux, Remix, Node.js, .NET, Prisma, Socket.io, Material-UI, Bootstrap</p>
       <p className='techSkill'><strong>Baas: </strong>Firebase, Fly.io</p>
       <p className='techSkill'><strong>Developer Tools: </strong>Git, VScode, Postman, PostgreSQL, MySQL Workbench</p>
-      <p className='techSkill'><strong>Non-Technical: </strong>REST API's, DRY coding, Object Oriented Programming, Test Driven Development, Pair Programming</p>
+      <p className='techSkill5'><strong>Non-Technical: </strong>REST API's, DRY coding, Object Oriented Programming, Test Driven Development, Pair Programming</p>
       <h2>Education</h2>
       <hr />
       <div className='container'>

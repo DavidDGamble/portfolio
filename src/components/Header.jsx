@@ -8,8 +8,8 @@ import "../styles/Header.css";
 const Header = (props) => {
   return (
     <div className="header">
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
+      <Navbar>
+        <div>
           <Nav className="me-auto">
             <Nav.Link className="linkContainer">
               <p className={props.home ? "link2" : "link"} 
@@ -24,7 +24,7 @@ const Header = (props) => {
                 onClick={props.handleProjects}>projects</p>
             </Nav.Link>
           </Nav>
-        </Container>
+        </div>
       </Navbar>
     </div>
   );

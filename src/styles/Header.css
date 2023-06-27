@@ -3,7 +3,17 @@
   color: white;
   border: 1px solid white;
   margin-top: 1rem;
+  margin-bottom: 1rem;
   display: flex;
+}
+
+Nav {
+  margin-bottom: -.75rem;
+  /* margin-left: 1rem; */
+}
+
+p {
+  margin-left: 1.5rem;
 }
 
 .linkContainer {

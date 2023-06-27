@@ -3,12 +3,8 @@
   flex-direction: column;
 }
 
-.resume > h1 {
+h1 {
   text-align: center;
-}
-
-h2 {
-  margin-bottom: 0;
 }
 
 .techSkill1 {
@@ -21,6 +17,13 @@ h2 {
   float: left;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 2rem;
+}
+
+.techSkill5 {
+  float: left;
+  margin-top: 0;
+  margin-bottom: 1rem;
   margin-left: 2rem;
 }
 
@@ -44,11 +47,14 @@ hr {
 .left {
   float: left;
   width: 80%;
-  margin-left: 2rem;
   margin-right: 3rem;
 }
 
 .right {
   float: right;
   width: 20%;
+}
+
+ul {
+  margin-left: 2rem;
 }
