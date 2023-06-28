@@ -13,3 +13,33 @@ h1 {
   background-repeat: no-repeat;
   background-size: 70px 70px;
 }
+
+.link {
+  display:block;
+  position: relative;
+  color: white;
+  width: fit-content;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.link:hover {
+  cursor: pointer;
+  font-weight: 700;
+}
