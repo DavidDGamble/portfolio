@@ -14,14 +14,15 @@ h1 {
   background-size: 70px 70px;
 }
 
-.link {
+.button {
   display:block;
   position: relative;
   color: white;
   width: fit-content;
+  /* margin-right: 1.5rem; */
 }
 
-.link::after {
+.button::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -34,12 +35,27 @@ h1 {
   transition: transform 0.25s ease-out;
 }
 
-.link:hover::after {
+.button:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.link:hover {
+.button:hover {
   cursor: pointer;
   font-weight: 700;
+}
+
+.link-container {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px solid white;
+  margin-left: 2rem;
+}
+
+.link:hover {
+  cursor: pointer;
 }

@@ -3,8 +3,8 @@ import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
-import Button from "react-bootstrap/Button";
-import GeTogether from "../images/Getogether_Screenshot.png"
+import GeTogether from "../images/Getogether_Screenshot.png";
+import SnailMail from "../images/Snailmail_Screenshot.png";
 import "../styles/Projects.css";
 
 const Projects = () => {
@@ -30,35 +30,100 @@ const Projects = () => {
     <div className="projects">
       <h1>Projects</h1>
       <Row>
-        <Col>
+        <Col md={3}>
           <div className="selections">
-            <p className="link" onClick={() => handleButtonClick(1)}>GeTogether</p>
-            <p className="link" onClick={() => handleButtonClick(2)}>Button 2</p>
+            <p className="button" onClick={() => handleButtonClick(1)}>
+              GeTogether
+            </p>
+            <p className="button" onClick={() => handleButtonClick(2)}>
+              SnailMail
+            </p>
           </div>
         </Col>
-        <Col>
+        <Col md={9}>
           <Collapse in={openDiv1}>
             <div>
-              <Card>
-                <Card.Img variant="top" src={GeTogether} />
-                <Card.Body>
-                  <Card.Title>GeTogether</Card.Title>
-                  <Card.Text>
-                    GeTogether is a robust web application built with Remix and Typescript while utilizing Postgres as the database management system. The app facilitates the creation and management of potluck style events, allowing users to organize and coordinate gatherings seamlessly. In addition to its powerful event management capabilities, the app employs Socket.io, a real-time communication library, to enable live communication between users associated with the events, fostering interactive and engaging experiences. With its combination of Typescript, Postgres, and Socket.io, GeTogether provides a reliable and dynamic platform for users to plan and participate in potluck events.
+              <Card style={{ border: 0 }}>
+                <Card.Img
+                  variant="top"
+                  src={GeTogether}
+                  alt="Screenshot of GeTogether"
+                />
+                <Card.Body style={{ backgroundColor: "#1d1d20" }}>
+                  <Card.Title style={{ color: "white", fontWeight: "bold" }}>
+                    GeTogether
+                  </Card.Title>
+                  <Card.Text style={{ color: "white" }}>
+                    GeTogether is a robust web application and provides a
+                    reliable and dynamic platform for users to plan and
+                    participate in potluck events. This was created in 7 weeks
+                    with my teammate during my EyeCue Lab internship using Remix
+                    and TypeScript with Prisma and PostgreSQL for the backend,
+                    hosted on Fly.io while using Material-UI for a component
+                    library.
                   </Card.Text>
-                  <Button variant="primary">Go somewhere</Button>
+                  <div className="link-container">
+                    <a
+                      className="link"
+                      href="https://getogether.fly.dev"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Site
+                    </a>
+                    <a
+                      className="link"
+                      href="https://github.com/DavidDGamble/GeTogether"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </div>
                 </Card.Body>
               </Card>
             </div>
           </Collapse>
           <Collapse in={openDiv2}>
             <div>
-              <Card.Body style={{ width: "400px" }}>
-                Project 2 Anim pariatur cliche reprehenderit, enim eiusmod high
-                life accusamus terry richardson ad squid. Nihil anim keffiyeh
-                helvetica, craft beer labore wes anderson cred nesciunt sapiente
-                ea proident.
-              </Card.Body>
+              <Card style={{ border: 0 }}>
+                <Card.Img
+                  variant="top"
+                  src={SnailMail}
+                  alt="Screenshot of Snailmail"
+                />
+                <Card.Body style={{ backgroundColor: "#1d1d20" }}>
+                  <Card.Title style={{ color: "white", fontWeight: "bold" }}>
+                    SnailMail
+                  </Card.Title>
+                  <Card.Text style={{ color: "white" }}>
+                    SnailMail is a web application where users can upload photos
+                    and create real life snail mail postcards to send to friends
+                    and family. This was my capstone project for Epicodus and
+                    built in one week using React and Firestore, hosted using
+                    Firebase, and using PostGrid for printing and mailing
+                    postcards, and Strip for payments.
+                  </Card.Text>
+                  <div className="link-container">
+                    <a
+                      className="link"
+                      href="https://www.snailmail.dev"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Site
+                    </a>
+                    <a
+                      className="link"
+                      href="https://github.com/DavidDGamble/SnailMail"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </Card.Body>
+              </Card>
             </div>
           </Collapse>
         </Col>

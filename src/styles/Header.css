@@ -9,24 +9,23 @@
 
 Nav {
   margin-bottom: -.75rem;
-  /* margin-left: 1rem; */
 }
 
 p {
   margin-left: 1.5rem;
 }
 
-.linkContainer {
+.button-container {
   padding-left: 5rem;
 }
 
-.link {
+.button {
   display: inline-block;
   position: relative;
   color: white;
 }
 
-.link::after {
+.button::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -39,17 +38,17 @@ p {
   transition: transform 0.25s ease-out;
 }
 
-.link:hover::after {
+.button:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-.link:hover {
+.button:hover {
   cursor: pointer;
   font-weight: 700;
 }
 
-.link2 {
+.button2 {
   display: inline-block;
   position: relative;
   color: white;
