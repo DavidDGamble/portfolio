@@ -5,21 +5,30 @@ import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import GeTogether from "../images/Getogether_Screenshot.png";
 import SnailMail from "../images/Snailmail_Screenshot.png";
+import SurveyCreator from "../images/SurveyCreator_Screenshot.png";
 import "../styles/Projects.css";
 
 const Projects = () => {
   const [openDiv1, setOpenDiv1] = useState(false);
   const [openDiv2, setOpenDiv2] = useState(false);
+  const [openDiv3, setOpenDiv3] = useState(false);
 
   const handleButtonClick = (divNumber) => {
     switch (divNumber) {
       case 1:
         setOpenDiv1(!openDiv1);
         setOpenDiv2(false);
+        setOpenDiv3(false);
         break;
       case 2:
-        setOpenDiv2(!openDiv2);
         setOpenDiv1(false);
+        setOpenDiv2(!openDiv2);
+        setOpenDiv3(false);
+        break;
+      case 3:
+        setOpenDiv1(false);
+        setOpenDiv2(false);
+        setOpenDiv3(!openDiv3);
         break;
       default:
         break;
@@ -37,6 +46,9 @@ const Projects = () => {
             </p>
             <p className="button" onClick={() => handleButtonClick(2)}>
               SnailMail
+            </p>
+            <p className="button" onClick={() => handleButtonClick(3)}>
+              Survey Creator
             </p>
           </div>
         </Col>
@@ -116,6 +128,46 @@ const Projects = () => {
                     <a
                       className="link"
                       href="https://github.com/DavidDGamble/SnailMail"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      GitHub
+                    </a>
+                  </div>
+                </Card.Body>
+              </Card>
+            </div>
+          </Collapse>
+          <Collapse in={openDiv3}>
+            <div>
+              <Card style={{ border: 0 }}>
+                <Card.Img
+                  variant="top"
+                  src={SurveyCreator}
+                  alt="Screenshot of Survey Creator"
+                />
+                <Card.Body style={{ backgroundColor: "#1d1d20" }}>
+                  <Card.Title style={{ color: "white", fontWeight: "bold" }}>
+                    Survey Creator
+                  </Card.Title>
+                  <Card.Text style={{ color: "white" }}>
+                    Survey Creator is a React web app using Firestore to
+                    create/take surveys and view all the answers submited by
+                    users. This was made with a classmate in Epicodus in a
+                    couple days and hosted using Firebase.
+                  </Card.Text>
+                  <div className="link-container">
+                    <a
+                      className="link"
+                      href="https://survey-creator-2ea8b.web.app/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      View Site
+                    </a>
+                    <a
+                      className="link"
+                      href="https://github.com/DavidDGamble/survey-creator"
                       target="_blank"
                       rel="noreferrer"
                     >
