@@ -1,6 +1,8 @@
 import React from "react";
-import Me from "../images/me.JPG"
-import Rocket from './Rocket';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Me from "../images/me.JPG";
+import Rocket from "./Rocket";
 import Ufo from "./Ufo";
 import StarBackground from "./StarBackground";
 import "../styles/Home.css";
@@ -9,13 +11,25 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Welcome!</h1>
-      <img className="photo" src={Me} alt="David Gamble" />
-      <p>My name is David Gamble. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, velit est deleniti iusto eligendi quia ab! Voluptates ut nulla deleniti vero natus? Dignissimos quibusdam dicta eaque est ducimus odio repellat!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quidem at tempore magni omnis reprehenderit debitis fugit, possimus sequi atque modi eos officiis tenetur ut impedit soluta sed quibusdam error!</p>
+      <Row>
+        <Col md={5}>
+          <img className="photo" src={Me} alt="David Gamble" />
+        </Col>
+        <Col md={7}>
+          <p className="about">
+            My name is David Gamble, I am based in Portland, OR and a self
+            driven junior developer transitioning from a 10 year career in
+            woodworking/carpentry. I am excited to bring my problem solving and
+            resourcefulness to the software development industry. I love
+            creating beautiful and function pieces for others to enjoy.
+          </p>
+        </Col>
+      </Row>
       <Rocket />
       <Ufo />
       <StarBackground />
     </div>
   );
-}
+};
 
 export default Home;

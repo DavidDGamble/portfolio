@@ -19,7 +19,6 @@ h1 {
   position: relative;
   color: white;
   width: fit-content;
-  /* margin-right: 1.5rem; */
 }
 
 .button::after {

@@ -55,7 +55,13 @@ const Projects = () => {
         <Col md={9}>
           <Collapse in={openDiv1}>
             <div>
-              <Card style={{ border: 0 }}>
+              <Card
+                style={{
+                  border: 0,
+                  width: "60%",
+                  height: "auto",
+                }}
+              >
                 <Card.Img
                   variant="top"
                   src={GeTogether}
@@ -98,7 +104,13 @@ const Projects = () => {
           </Collapse>
           <Collapse in={openDiv2}>
             <div>
-              <Card style={{ border: 0 }}>
+              <Card
+                style={{
+                  border: 0,
+                  width: "60%",
+                  height: "auto",
+                }}
+              >
                 <Card.Img
                   variant="top"
                   src={SnailMail}
@@ -140,7 +152,13 @@ const Projects = () => {
           </Collapse>
           <Collapse in={openDiv3}>
             <div>
-              <Card style={{ border: 0 }}>
+              <Card
+                style={{
+                  border: 0,
+                  width: "60%",
+                  height: "auto",
+                }}
+              >
                 <Card.Img
                   variant="top"
                   src={SurveyCreator}

@@ -1,9 +1,14 @@
-.home {
+/* .home {
   text-align: center;
-}
+} */
 
 .photo {
   height: 300px;
   width: 300px;
   border-radius: 150px;
+  float: right;
+}
+
+.about {
+  margin-top: 4rem;
 }
