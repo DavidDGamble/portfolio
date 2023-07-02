@@ -1,8 +1,6 @@
-/* .home {
-  text-align: center;
-} */
-
 .photo {
+  position: relative;
+  z-index: 2;
   height: 300px;
   width: 300px;
   border-radius: 150px;
@@ -10,5 +8,5 @@
 }
 
 .about {
-  margin-top: 4rem;
+  margin-top: 5rem;
 }

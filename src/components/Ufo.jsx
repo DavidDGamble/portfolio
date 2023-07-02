@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import Collapse from "react-bootstrap/Collapse";
 import UfoImg from "../images/ufo.png";
 import UfoGif from "../images/ufo.gif";
 
@@ -16,7 +15,7 @@ const Ufo = () => {
       } else if (position < 403) {
         setPosition((prevPosition) => prevPosition + 3);
       } else {
-        setPosition((prevPosition) => prevPosition + 7);
+        setPosition((prevPosition) => prevPosition + 15);
       }
     }, 10);
 
@@ -49,11 +48,11 @@ const Ufo = () => {
       setTimeout(() => {
         setPosition(404);
       }, 500);
-    };
-  }, [isOpen])
+    }
+  }, [isOpen]);
 
   return (
-    <div>
+    <div className="ufo">
       {position !== 403 ? (
         <img
           src={UfoImg}
@@ -75,19 +74,18 @@ const Ufo = () => {
           }}
         />
       )}
-      <Collapse in={isOpen}>
-        <div>
-          <h3
-            style={{
-              position: "absolute",
-              left: "360px",
-              bottom: `${position2}px`,
-            }}
-          >
-            Hire me! 🤘🏽👽🤙🏽
-          </h3>
-        </div>
-      </Collapse>
+      <div>
+        <h3
+          style={{
+            visibility: position === 403 ? "visible" : "hidden",
+            position: "fixed",
+            left: "360px",
+            bottom: `${position2}px`,
+          }}
+        >
+          Hire me! 🤘🏽👽🤙🏽
+        </h3>
+      </div>
     </div>
   );
 };

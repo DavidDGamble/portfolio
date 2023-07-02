@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div className="home">
       <h1>Welcome!</h1>
-      <Row>
+      <Row style={{ marginTop: "2rem" }}>
         <Col md={5}>
           <img className="photo" src={Me} alt="David Gamble" />
         </Col>
@@ -19,8 +19,8 @@ const Home = () => {
           <p className="about">
             My name is David Gamble, I am based in Portland, OR and a self
             driven junior developer transitioning from a 10 year career in
-            woodworking/carpentry. I am excited to bring my problem solving and
-            resourcefulness to the software development industry. I love
+            woodworking/carpentry.  I am excited to bring my problem solving and
+            resourcefulness to the software development industry.  I love
             creating beautiful and function pieces for others to enjoy.
           </p>
         </Col>
