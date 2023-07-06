@@ -68,7 +68,7 @@ const Resume = () => {
           </ul>
         </div>
         <div className='right'>
-          <p className='bold'><strong>Mar. 2022 - Sept. 2022 | Feb. 2013 - Dec. 2016</strong></p>
+          <p className='bold'><strong>Mar. 2022 - Sept. 2022<br/>Feb. 2013 - Dec. 2016</strong></p>
           <p className='italic'><em>Portland, OR</em></p>
         </div>
       </div>

@@ -12,6 +12,7 @@ h1 {
 
   background-repeat: no-repeat;
   background-size: 70px 70px;
+  border-radius: 3px;
 }
 
 .button {
