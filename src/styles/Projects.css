@@ -54,8 +54,15 @@ h1 {
   color: white;
   border-bottom: 1px solid white;
   margin-left: 2rem;
+  padding-bottom: 1px;
 }
 
 .link:hover {
   cursor: pointer;
+}
+
+.ufo {
+  text-align: center;
+  margin-right: 40%;
+  margin-bottom: 0;
 }

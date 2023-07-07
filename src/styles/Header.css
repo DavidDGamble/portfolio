@@ -17,7 +17,7 @@ p {
 
 a {
   margin-bottom: 0;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   padding-bottom: 12px;
 }
 
@@ -68,8 +68,8 @@ a {
 }
 
 .linkedin {
-  height: 40px;
-  width: 40px;
+  height: 35px;
+  width: 35x;
 }
 
 .github {

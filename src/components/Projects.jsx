@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Card from "react-bootstrap/Card";
 import Collapse from "react-bootstrap/Collapse";
 import Col from "react-bootstrap/Col";
@@ -6,14 +6,26 @@ import Row from "react-bootstrap/Row";
 import GeTogether from "../images/Getogether_Screenshot.png";
 import SnailMail from "../images/Snailmail_Screenshot.png";
 import SurveyCreator from "../images/SurveyCreator_Screenshot.png";
+import UfoImg from "../images/ufo.png";
+import UfoGif from "../images/ufo.gif";
 import "../styles/Projects.css";
 
 const Projects = () => {
   const [openDiv1, setOpenDiv1] = useState(false);
   const [openDiv2, setOpenDiv2] = useState(false);
   const [openDiv3, setOpenDiv3] = useState(false);
+  const [playGif, setPlayGif] = useState(false);
+
+  useEffect(() => {
+    if (playGif) {
+      setTimeout(function () {
+        setPlayGif(false);
+      }, 800);
+    }
+  }, [playGif]);
 
   const handleButtonClick = (divNumber) => {
+    setPlayGif(true);
     switch (divNumber) {
       case 1:
         setOpenDiv1(!openDiv1);
@@ -39,7 +51,7 @@ const Projects = () => {
     <div className="projects">
       <h1>Projects</h1>
       <Row>
-        <Col md={3}>
+        <Col md={3} style={{ paddingLeft: "12%" }}>
           <div className="selections">
             <p className="button" onClick={() => handleButtonClick(1)}>
               GeTogether
@@ -52,7 +64,10 @@ const Projects = () => {
             </p>
           </div>
         </Col>
-        <Col md={9}>
+        <Col md={9} style={{ paddingLeft: "15%" }}>
+          <div className="ufo">
+            <img src={playGif ? UfoGif : UfoImg} alt="ufo" />
+          </div>
           <Collapse in={openDiv1}>
             <div>
               <Card
