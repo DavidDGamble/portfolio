@@ -7,24 +7,14 @@ h1 {
   text-align: center;
 }
 
-.techSkill1 {
-  float: left;
-  margin-bottom: 0;
-  margin-left: 2rem;
-}
-
-.techSkill {
-  float: left;
+.tech-skill {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 2rem;
 }
 
-.techSkill5 {
-  float: left;
+.tech-skill5 {
   margin-top: 0;
   margin-bottom: 1rem;
-  margin-left: 2rem;
 }
 
 .bold {
@@ -40,8 +30,9 @@ hr {
   margin-top: 0;
 }
 
-.container {
+.holder {
   display: flex;
+  margin-left: 2rem;
 }
 
 .left {
