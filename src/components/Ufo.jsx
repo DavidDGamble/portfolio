@@ -13,7 +13,7 @@ const Ufo = () => {
         setPosition2((prevPosition) => prevPosition - 3);
       } else if (position < 403) {
         setPosition((prevPosition) => prevPosition + 3);
-      } else if (position > 1600) {
+      } else if (position > 1900) {
         clearInterval(interval);
       } else {
         setPosition((prevPosition) => prevPosition + 15);
