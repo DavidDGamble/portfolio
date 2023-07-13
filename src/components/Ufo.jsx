@@ -4,16 +4,17 @@ import UfoGif from "../images/ufo.gif";
 
 const Ufo = () => {
   const [position, setPosition] = useState(-800);
-  const [position2, setPosition2] = useState(-40);
-  const [isOpen, setIsOpen] = useState(true);
+  const [position2, setPosition2] = useState(800);
 
   useEffect(() => {
     const interval = setInterval(() => {
       if (position === 403) {
         clearInterval(interval);
-        setPosition2((prevPosition) => prevPosition + 3);
+        setPosition2((prevPosition) => prevPosition - 3);
       } else if (position < 403) {
         setPosition((prevPosition) => prevPosition + 3);
+      } else if (position > 1600) {
+        clearInterval(interval);
       } else {
         setPosition((prevPosition) => prevPosition + 15);
       }
@@ -25,13 +26,15 @@ const Ufo = () => {
   }, [position]);
 
   useEffect(() => {
-    if (position2 !== -40) {
+    if (position2 !== 800) {
       const interval = setInterval(() => {
-        if (position2 === 200) {
+        if (position2 === 530) {
           clearInterval(interval);
-          setIsOpen(false);
+          setTimeout(() => {
+            setPosition(404);
+          }, 500);
         } else {
-          setPosition2((prevPosition) => prevPosition + 1);
+          setPosition2((prevPosition) => prevPosition - 1);
         }
       }, 10);
 
@@ -43,14 +46,6 @@ const Ufo = () => {
     }
   }, [position2]);
 
-  useEffect(() => {
-    if (!isOpen) {
-      setTimeout(() => {
-        setPosition(404);
-      }, 500);
-    }
-  }, [isOpen]);
-
   return (
     <div className="ufo">
       {position !== 403 ? (
@@ -59,7 +54,7 @@ const Ufo = () => {
           alt="ufo"
           style={{
             position: "absolute",
-            bottom: `200px`,
+            top: "475px",
             left: `${position}px`,
           }}
         />
@@ -69,7 +64,7 @@ const Ufo = () => {
           alt="ufo"
           style={{
             position: "absolute",
-            bottom: "200px",
+            top: "475px",
             left: `${position}px`,
           }}
         />
@@ -80,7 +75,7 @@ const Ufo = () => {
             visibility: position === 403 ? "visible" : "hidden",
             position: "fixed",
             left: "360px",
-            bottom: `${position2}px`,
+            top: `${position2}px`,
           }}
         >
           Hire me! 🤘🏽👽🤙🏽
