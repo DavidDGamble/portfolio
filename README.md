@@ -33,3 +33,11 @@ Logs in to Firebase account.
 Deploys the latest version of the project.  
 
 Make sure to run `npm run build` before deploying.
+
+### `firebase hosting:channel:deploy CHANNEL_ID`
+
+Replace CHANNEL_ID with a string with no spaces (for example, feature_mission-2-mars). This ID will be used to construct the preview URL associated with the preview channel.
+
+Open your web app at the preview URL returned by the CLI. It will look something like this: PROJECT_ID--CHANNEL_ID-RANDOM_HASH.web.app
+
+To update your preview URL with changes, run the same command again. Make sure to specify the same CHANNEL_ID in the command.
